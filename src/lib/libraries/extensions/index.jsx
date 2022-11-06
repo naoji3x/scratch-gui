@@ -49,6 +49,9 @@ import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 import openMeteoIconURL from './openmeteo/open-meteo.png';
 import openMeteoInsetIconURL from './openmeteo/open-meteo-small.png';
 
+import openStreetMapIconURL from './openstreetmap/open-street-map.png';
+import openStreetMapInsetIconURL from './openstreetmap/open-street-map-small.png';
+
 export default [
     {
         name: (
@@ -329,5 +332,15 @@ export default [
         description: '天気予報を取得します（てんきよほうをしゅとくします）',
         internetConnectionRequired: true,
         featured: true
+    },
+    {
+        name: '地図(ちず)',
+        extensionId: 'openStreetMap',
+        iconURL: openStreetMapIconURL,
+        insetIconURL: openStreetMapInsetIconURL,
+        description: '地図を表示します（ちずをひょうじします）。地図の著作権はhttps://www.openstreetmap.orgのcopyrightを参照ください。©︎OpenStreetMap contributors',
+        internetConnectionRequired: true,
+        featured: true,
+        helpLink: 'https://www.openstreetmap.org/copyright'
     }
 ];
